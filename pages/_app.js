@@ -1,33 +1,14 @@
 import "@styles/globals.css";
-import {
-  MantineProvider,
-  ColorSchemeProvider,
-  ColorScheme,
-} from "@mantine/core";
-
-import { useState } from "react";
-import Layout from "@components/Layout";
+import Layout from "@components/Layout/Layout";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function Application({ Component, pageProps }) {
-  const [colorScheme, setColorScheme] = useState("light");
-  const toggleColorScheme = (value) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
-
   return (
-    <ColorSchemeProvider
-      colorScheme={colorScheme}
-      toggleColorScheme={toggleColorScheme}
-    >
-      <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{ colorScheme }}
-      >
-        <Layout>
-          <Component {...pageProps}></Component>
-        </Layout>
-      </MantineProvider>
-    </ColorSchemeProvider>
+    <ChakraProvider resetCSS>
+      <Layout>
+        <Component {...pageProps}></Component>
+      </Layout>
+    </ChakraProvider>
   );
 }
 

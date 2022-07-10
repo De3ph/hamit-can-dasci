@@ -1,8 +1,8 @@
-import { useMantineColorScheme } from "@mantine/core";
-
+import Hero from "@components/Hero";
 export default function Home() {
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  const dark = colorScheme === "dark";
-
-  return <div className="container">Index.js</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
