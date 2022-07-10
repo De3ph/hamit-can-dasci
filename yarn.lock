@@ -42,7 +42,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.13.10", "@babel/runtime@^7.7.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.0", "@babel/runtime@^7.7.2":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
   integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
@@ -650,6 +650,21 @@
   dependencies:
     debug "^3.1.0"
     lodash.once "^4.1.1"
+
+"@emotion-icons/emotion-icon@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.1.0.tgz#587667e92a72dc3b271713eed4b72c6bf3b22df1"
+  integrity sha512-bOUbWj8DPjUK5MtRx2ApMudOnh/tasqJwa+sdRbqsZD0g0hYf0jCsTDNs/57VvGOJH2PfWDKD1jbLjwajAYT9A==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+
+"@emotion-icons/evaicons-solid@^3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/evaicons-solid/-/evaicons-solid-3.14.0.tgz#c34c8ed058fe3fb3a4243ce6337b7137df8d26cf"
+  integrity sha512-3vZoV4SjQ9ByNVYLFpjZrvVIn6pQPznZqPnGEvssL1IoXDiOFvEMWjYa+gtxlAVC1eB7wXWoxRhPLT6jUhgVdw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
 
 "@emotion/babel-plugin@^11.7.1":
   version "11.9.2"

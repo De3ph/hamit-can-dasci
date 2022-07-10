@@ -6,9 +6,12 @@ import {
   Text,
   Tooltip,
   Stack,
+  Button,
 } from "@chakra-ui/react";
+import { Github } from "@emotion-icons/evaicons-solid";
 import coder from "public/images/coder.svg";
 import Image from "next/image";
+import { colours } from "@styles/Colours";
 
 const Hero = () => {
   return (
@@ -32,10 +35,10 @@ const Hero = () => {
                 <Box>
                   <Heading
                     size={{
-                      base: "xl",
-                      lg: "2xl",
+                      base: "2xl",
+                      lg: "3xl",
                     }}
-                    bgGradient="linear(to-l, red, orange)"
+                    bgGradient={colours.hero_title_gradient}
                     bgClip="text"
                   >
                     Hi! I'm{" "}
@@ -49,17 +52,19 @@ const Hero = () => {
                     </Tooltip>
                   </Heading>
                 </Box>
+
                 <Box>
                   <Text
+                    as="div"
                     fontSize={{
-                      base: "lg",
+                      base: "2xl",
                       lg: "2xl",
                     }}
                   >
-                    Hamit is{" "}
+                    Hamit is a{" "}
                     <Text
                       fontSize={{
-                        base: "lg",
+                        base: "2xl",
                         lg: "2xl",
                       }}
                       display="inline"
@@ -79,6 +84,34 @@ const Hero = () => {
               <Image src={coder}></Image>
             </Box>
           </SimpleGrid>
+          <Box
+            mt={{
+              lg: "4",
+              xl: "auto",
+            }}
+            width="fit-content"
+            mx={{
+              base: "auto",
+              md: "unset",
+            }}
+          >
+            <Button
+              leftIcon={<Github size="24" />}
+              variant="solid"
+              bgColor={colours.github_button_link}
+              size={{
+                base: "sm",
+                sm: "md",
+                md: "lg",
+              }}
+              _hover={{
+                opacity: "0.7",
+                color: colours.github_button_link_hover_text,
+              }}
+            >
+              Let's preview my GitHub
+            </Button>
+          </Box>
         </Box>
       </Box>
     </>
