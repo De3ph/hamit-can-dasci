@@ -6,6 +6,9 @@
       "@styles/*": [
         "styles/*"
       ],
+      "@exports/*": [
+        "exports/*"
+      ]
     }
   }
 }

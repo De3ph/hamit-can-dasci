@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Box,
   SimpleGrid,
@@ -7,12 +8,11 @@ import {
   Tooltip,
   Stack,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import { Github } from "@emotion-icons/evaicons-solid";
+import { colours } from "@exports/Colours";
 import coder from "public/images/coder.svg";
-import Image from "next/image";
-import { colours } from "@styles/Colours";
-
 const Hero = () => {
   return (
     <>
@@ -81,7 +81,7 @@ const Hero = () => {
             </Flex>
 
             <Box justify="center" align="center" className="media">
-              <Image src={coder}></Image>
+              <Image priority={true} src={coder}></Image>
             </Box>
           </SimpleGrid>
           <Box
@@ -109,7 +109,7 @@ const Hero = () => {
                 color: colours.github_button_link_hover_text,
               }}
             >
-              Let's preview my GitHub
+              <a href="https://github.com/De3ph">Let's preview my GitHub</a>
             </Button>
           </Box>
         </Box>
