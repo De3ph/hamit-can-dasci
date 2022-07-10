@@ -1,9 +1,11 @@
-import { Box } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 
 const Header = () => {
   return (
     <>
-      <Box></Box>
+      <Box>
+        <HStack></HStack>
+      </Box>
     </>
   );
 };
