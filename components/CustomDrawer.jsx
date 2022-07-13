@@ -12,7 +12,7 @@ import {
   Box,
   VStack,
 } from "@chakra-ui/react";
-import { Menu, Layers } from "@emotion-icons/evaicons-solid";
+import { Menu } from "@emotion-icons/evaicons-solid";
 import { headerLinks } from "@exports/HeaderLinks";
 import Link from "next/link";
 import { colours } from "@exports/Colours";
@@ -25,8 +25,6 @@ const CustomDrawer = () => {
         base: "block",
         lg: "none",
       }}
-      position="absolute"
-      top="0"
     >
       <Button
         _hover={{
