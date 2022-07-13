@@ -8,17 +8,14 @@ import {
   Tooltip,
   Stack,
   Button,
-  Link,
 } from "@chakra-ui/react";
 import { Github } from "@emotion-icons/evaicons-solid";
 import { colours } from "@exports/Colours";
 import coder from "public/images/coder.svg";
-import CustomDrawer from "@components/CustomDrawer";
 const Hero = () => {
   return (
     <>
       <Box w="80vw" p="8">
-        <CustomDrawer />
         <Box>
           <SimpleGrid
             w="100%"
@@ -65,8 +62,7 @@ const Hero = () => {
                     <Text
                       fontSize={{
                         base: "2xl",
-                        lg: "2xl",
-                        xl: "3xl",
+                        lg: "3xl",
                       }}
                       display="inline"
                       color="orange"
@@ -93,7 +89,7 @@ const Hero = () => {
             width="fit-content"
             mx={{
               base: "auto",
-              md: "unset",
+              lg: "unset",
             }}
           >
             <Button

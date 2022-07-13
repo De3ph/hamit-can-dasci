@@ -6,4 +6,6 @@ export const colours = {
   social_link_hover_backgroundColor: "rgba(250, 250, 250, 0.12)",
   social_link_color: "#CD4DD2",
   social_link_hover_color: "#E9A882",
+  header_link_button_color: "#F2672E",
+  header_link_button_hover_color: "#CD4DD2",
 };

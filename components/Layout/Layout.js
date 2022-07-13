@@ -1,6 +1,7 @@
 import style from "@styles/Layout.module.css";
 import { VStack } from "@chakra-ui/react";
 import Header from "./Header";
+import CustomDrawer from "@components/CustomDrawer";
 
 export default function Layout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
       minH="100vh"
     >
       <Header />
+      <CustomDrawer />
       {children}
     </VStack>
   );
