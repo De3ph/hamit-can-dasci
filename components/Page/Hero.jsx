@@ -13,10 +13,12 @@ import {
 import { Github } from "@emotion-icons/evaicons-solid";
 import { colours } from "@exports/Colours";
 import coder from "public/images/coder.svg";
+import CustomDrawer from "@components/CustomDrawer";
 const Hero = () => {
   return (
     <>
       <Box w="80vw" p="8">
+        <CustomDrawer />
         <Box>
           <SimpleGrid
             w="100%"
@@ -27,17 +29,15 @@ const Hero = () => {
           >
             <Flex direction="column" className="infos">
               <Stack
-                spacing={{
-                  base: "1.2rem",
-                  lg: "3rem",
+                gap={{
+                  base: "2rem",
+                  md: "3rem",
+                  lg: "4rem",
                 }}
               >
                 <Box>
                   <Heading
-                    size={{
-                      base: "2xl",
-                      lg: "3xl",
-                    }}
+                    size="3xl"
                     bgGradient={colours.hero_title_gradient}
                     bgClip="text"
                   >
@@ -58,7 +58,7 @@ const Hero = () => {
                     as="div"
                     fontSize={{
                       base: "2xl",
-                      lg: "2xl",
+                      lg: "3xl",
                     }}
                   >
                     Hamit is a{" "}
@@ -66,6 +66,7 @@ const Hero = () => {
                       fontSize={{
                         base: "2xl",
                         lg: "2xl",
+                        xl: "3xl",
                       }}
                       display="inline"
                       color="orange"

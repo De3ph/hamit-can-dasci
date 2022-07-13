@@ -2,5 +2,10 @@
     background-image: url("../public/images/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* 
+        FIXME: 
+            Arka plan tam olarak responsive davranmıyor, arka planın her zaman masaüstü arka planında olduğu gibi gözüksün
+        
+        
+        */
 }
