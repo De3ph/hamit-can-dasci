@@ -1,12 +1,12 @@
 import style from "@styles/Layout.module.css";
 import { VStack } from "@chakra-ui/react";
 import Header from "./Header";
-import CustomDrawer from "@components/CustomDrawer";
+import CustomDrawer from "./CustomDrawer";
 
 export default function Layout({ children }) {
   return (
     <VStack
-      pt="8"
+      py="8"
       color="white"
       className={style.layout}
       justify="center"

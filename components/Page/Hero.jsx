@@ -70,8 +70,8 @@ const Hero = () => {
                       Jr Web Developer
                     </Text>{" "}
                     who is improve his skills day by day. He is passionate to
-                    use different techs and enjoy to coding. He is student at
-                    Ege University in Computer Science/Engineering Degree.
+                    use different techs and enjoy coding. He is student at Ege
+                    University in Computer Science/Engineering Degree.
                   </Text>
                 </Box>
               </Stack>

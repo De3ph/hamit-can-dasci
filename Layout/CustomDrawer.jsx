@@ -16,6 +16,7 @@ import { Menu } from "@emotion-icons/evaicons-solid";
 import { headerLinks } from "@exports/HeaderLinks";
 import Link from "next/link";
 import { colours } from "@exports/Colours";
+
 const CustomDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
@@ -25,6 +26,8 @@ const CustomDrawer = () => {
         base: "block",
         lg: "none",
       }}
+      h="7vh"
+      maxH="7vh"
     >
       <Button
         _hover={{
