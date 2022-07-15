@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "@components/Page/Links";
+import Links from "@components/Links/Links";
 
 const links = () => {
   return (

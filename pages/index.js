@@ -1,4 +1,4 @@
-import Hero from "@components/Page/Hero";
+import Hero from "@components/Hero/Hero";
 import { Box } from "@chakra-ui/react";
 import style from "@styles/Glass.module.css";
 

@@ -1,7 +1,7 @@
-import { Box, Divider, Stack, StackDivider } from "@chakra-ui/react";
+import { Box, Stack, StackDivider } from "@chakra-ui/react";
 import React from "react";
 import { socialLinks } from "@exports/SocialLinks";
-import SocialLink from "../SocialLink";
+import SocialLink from "./SocialLink";
 
 const Links = () => {
   return (

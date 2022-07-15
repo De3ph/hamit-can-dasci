@@ -20,10 +20,9 @@ const Header = () => {
           <Flex gap="5" justify="space-around" w="100%">
             {headerLinks.map((link, key) => {
               return (
-                <Link href={link.href}>
+                <Link key={key} href={link.href}>
                   <Button
                     fontSize="2xl"
-                    key={key}
                     _hover={{
                       color: colours.header_link_button_hover_color,
                     }}
