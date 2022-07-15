@@ -78,7 +78,7 @@ const Hero = () => {
             </Flex>
 
             <Box justify="center" align="center" className="media">
-              <Image priority={true} src={coder}></Image>
+              <Image priority={true} src={coder} alt="coder-gif"></Image>
             </Box>
           </SimpleGrid>
           <Box

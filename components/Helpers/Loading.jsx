@@ -1,4 +1,4 @@
-import { Flex, Heading, Spinner } from "@chakra-ui/react";
+import { Flex, Heading, Spinner, Box } from "@chakra-ui/react";
 import React from "react";
 
 const Loading = () => {

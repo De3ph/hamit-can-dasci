@@ -22,7 +22,7 @@ const SocialLink = ({ platform, href, icon, key }) => {
               color: colours.social_link_hover_color,
             }}
           >
-            <a target="_blank" href={href}>
+            <a target="_blank" rel="noreferrer" href={href}>
               {icon}
             </a>
           </Button>

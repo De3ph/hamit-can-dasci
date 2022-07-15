@@ -33,4 +33,4 @@ yarn-error.log*
 .netlify
 
 # Sanity Studio
-/sanity
+/studio
