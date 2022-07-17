@@ -13,11 +13,6 @@ export default function Layout({ children }) {
       align="center"
       minH="100vh"
     >
-      {/* 
-        FIXME:
-          Drawer social link sayfasına gelince linklerin üstüne düşüyor, en üstte durması lazım header gibi
-      
-      */}
       <Header />
       <CustomDrawer />
       {children}
