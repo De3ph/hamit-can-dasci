@@ -8,11 +8,9 @@ const Header = () => {
     <Box
       display={{
         base: "none",
-        lg: "block",
+        md: "block",
       }}
       p="8"
-      pos="absolute"
-      top={4}
       w="80vw"
     >
       <Box textColor={colours.linkColor}>

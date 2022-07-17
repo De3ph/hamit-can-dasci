@@ -1,11 +1,5 @@
 .layout {
-    background-image: url("../public/images/background.svg");
+    background-image: url("../public/svg/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* 
-        FIXME: 
-            Arka plan tam olarak responsive davranmıyor, arka planın her zaman masaüstü arka planında olduğu gibi gözüksün
-        
-        
-        */
 }

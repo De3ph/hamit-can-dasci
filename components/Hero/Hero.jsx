@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { Github } from "@emotion-icons/evaicons-solid";
 import { colours } from "@exports/Colours";
-import coder from "public/images/coder.svg";
+import coder from "public/svg/coder.svg";
 const Hero = () => {
   return (
     <>

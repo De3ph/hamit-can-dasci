@@ -24,7 +24,7 @@ const CustomDrawer = () => {
     <Box
       display={{
         base: "block",
-        lg: "none",
+        md: "none",
       }}
       h="7vh"
       maxH="7vh"
