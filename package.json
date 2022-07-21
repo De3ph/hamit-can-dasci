@@ -18,6 +18,7 @@
     "@emotion-icons/evaicons-solid": "^3.14.0",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@sanity/cli": "^2.30.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.5",
@@ -34,7 +35,6 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.12.2",
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2",
-    "sanity-cli": "^0.0.2"
+    "eslint-config-next": "12.2.2"
   }
 }
