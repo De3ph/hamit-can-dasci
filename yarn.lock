@@ -5899,6 +5899,11 @@ same-origin@^0.1.1:
   resolved "https://registry.yarnpkg.com/same-origin/-/same-origin-0.1.1.tgz#c2287d3192577df517acbbd6d1451a9c3c3914f5"
   integrity sha512-effkSW9cap879l6CVNdwL5iubVz8tkspqgfiqwgBgFQspV7152WHaLzr5590yR8oFgt7E1d4lO09uUhtAgUPoA==
 
+sanity-cli@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/sanity-cli/-/sanity-cli-0.0.2.tgz#7464c3ff3aea3ae45c39279076c55989e0e40757"
+  integrity sha512-OyWjZqsEux+OtBfWS1pHfhuofUKuef7FpgpF96mX0oj4QYi9j6JS7qRa4yp6KPCsJcUvMUrX7jDiUPETdBTgkQ==
+
 saxes@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/saxes/-/saxes-5.0.1.tgz#eebab953fa3b7608dbe94e5dadb15c888fa6696d"

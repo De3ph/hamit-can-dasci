@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
-import { getClient } from "@lib/sanity";
+import { getClient } from "@lib/sanity/sanity";
 import { groq } from "next-sanity";
 
 const query = groq`
