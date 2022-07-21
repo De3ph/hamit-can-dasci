@@ -10,7 +10,7 @@
     "sanity": "cd studio && sanity start",
     "lint": "next lint",
     "export": "next export",
-    "test": "jest --watch",
+    "test": "jest test --coverage",
     "cy": "cypress open"
   },
   "dependencies": {
@@ -32,7 +32,7 @@
     "react-tooltip": "^4.2.21"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.11.1",
+    "@netlify/plugin-nextjs": "^4.12.2",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2"
   }
