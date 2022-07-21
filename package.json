@@ -14,11 +14,13 @@
     "cy": "cypress open"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@chakra-ui/react": "^2.2.3",
     "@emotion-icons/evaicons-solid": "^3.14.0",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@sanity/cli": "^2.30.2",
+    "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.5",
@@ -30,7 +32,8 @@
     "next-sanity": "^0.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-tooltip": "^4.2.21"
+    "react-tooltip": "^4.2.21",
+    "typescript": ">=2.8.0"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.12.2",
