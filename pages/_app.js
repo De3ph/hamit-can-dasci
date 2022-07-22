@@ -1,5 +1,5 @@
 import "@styles/globals.css";
-import Layout from "../layout/Layout";
+import Layout from "../components/layout/Layout";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function Application({ Component, pageProps }) {
