@@ -8,11 +8,12 @@ import {
   Tooltip,
   Stack,
   Button,
+  Highlight,
 } from "@chakra-ui/react";
 import { Github } from "@emotion-icons/evaicons-solid";
 import { colours } from "@exports/Colours";
 import coder from "public/svg/coder.svg";
-const Hero = () => {
+const Hero = ({ title, desc, highlightWords }) => {
   return (
     <>
       <Box w="80vw" p="8">
@@ -38,14 +39,13 @@ const Hero = () => {
                     bgGradient={colours.hero_title_gradient}
                     bgClip="text"
                   >
-                    Hi! I'm{" "}
                     <Tooltip
                       hasArrow
                       placement="top"
                       label="Hamit Can DAŞÇİ"
                       aria-label="A tooltip"
                     >
-                      Hamit
+                      {title}
                     </Tooltip>
                   </Heading>
                 </Box>
@@ -58,20 +58,14 @@ const Hero = () => {
                       lg: "3xl",
                     }}
                   >
-                    Hamit is a{" "}
-                    <Text
-                      fontSize={{
-                        base: "2xl",
-                        lg: "3xl",
+                    <Highlight
+                      query={highlightWords}
+                      styles={{
+                        color: "orange",
                       }}
-                      display="inline"
-                      color="orange"
                     >
-                      Jr Web Developer
-                    </Text>{" "}
-                    who is improve his skills day by day. He is passionate to
-                    use different techs and enjoy coding. He is student at Ege
-                    University in Computer Science/Engineering Degree.
+                      {desc}
+                    </Highlight>
                   </Text>
                 </Box>
               </Stack>
