@@ -5,7 +5,7 @@ import { colours } from "@exports/Colours";
 
 const SocialLink = ({ platform, href, icon, key }) => {
   return (
-    <Box key={key}>
+    <Box role="social-icon" key={key}>
       <Tooltip
         hasArrow
         placement="auto"

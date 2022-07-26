@@ -1,8 +1,16 @@
-import { Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import BlogCard from "@components/Blog/BlogCard";
+
 import React from "react";
 
 const Blog = () => {
-  return <Heading size="2xl">I didn't implement yet :(</Heading>;
+  return (
+    <>
+      <Box>
+        <BlogCard title="Test" />
+      </Box>
+    </>
+  );
 };
 
 export default Blog;
