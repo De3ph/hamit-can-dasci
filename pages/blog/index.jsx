@@ -1,21 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Blog from "@components/Blog/Blog";
 import { getClient } from "@lib/sanity/sanity";
-import { groq } from "next-sanity";
-
-const query = groq`
-*[_type == "post"] {
-  title,
-  mainImage,
-  author -> {
-    name,
-    image
-  }
-}
-`;
+import { getAllPostQuery } from "querys";
 
 export const getStaticProps = async ({ preview = false }) => {
-  const posts = await getClient(preview).fetch(query);
+  const posts = await getClient(preview).fetch(getAllPostQuery);
+
   return {
     props: {
       posts,
@@ -25,8 +15,7 @@ export const getStaticProps = async ({ preview = false }) => {
   };
 };
 
-const index = ({ posts }) => {
-  console.log(posts);
+const Index = ({ posts }) => {
   return (
     <>
       <Blog posts={posts} />
@@ -34,4 +23,4 @@ const index = ({ posts }) => {
   );
 };
 
-export default index;
+export default Index;

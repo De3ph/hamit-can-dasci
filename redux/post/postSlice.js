@@ -7,11 +7,7 @@ const initialState = {
 export const postSlice = createSlice({
   name: "post",
   initialState,
-  reducers: {
-    setPost: (state, action) => {
-      state.value = action.payload;
-    },
-  },
+  reducers: {},
 });
 
 export const { setPost } = postSlice.actions;
