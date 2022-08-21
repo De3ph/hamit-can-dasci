@@ -1,14 +1,9 @@
-import { Box } from "@chakra-ui/react";
-import BlogCard from "@components/Blog/BlogCard";
+import BlogGrid from "./BlogGrid";
 
-import React from "react";
-
-const Blog = () => {
+const Blog = ({ posts }) => {
   return (
     <>
-      <Box>
-        <BlogCard title="Test" />
-      </Box>
+      <BlogGrid posts={posts} />
     </>
   );
 };
