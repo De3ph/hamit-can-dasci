@@ -10,6 +10,7 @@ import {
   Button,
   Highlight,
 } from "@chakra-ui/react";
+import { MotionBox } from "@components/FramerMotion";
 import { Github } from "@emotion-icons/evaicons-solid";
 import { colours } from "@exports/Colours";
 import coder from "public/svg/coder.svg";
@@ -71,9 +72,22 @@ const Hero = ({ title, desc, highlightWords }) => {
               </Stack>
             </Flex>
 
-            <Box justify="center" align="center" className="media">
+            <MotionBox
+              initial={{ y: 0 }}
+              animate={{
+                y: 4,
+                transition: {
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                },
+              }}
+              justify="center"
+              align="center"
+              className="media"
+            >
               <Image priority={true} src={coder} alt="coder-gif"></Image>
-            </Box>
+            </MotionBox>
           </SimpleGrid>
           <Box
             mt={{
