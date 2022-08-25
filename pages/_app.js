@@ -89,7 +89,6 @@ function Application({ Component, pageProps }) {
               sizes="16x16"
               href="public/static/favicon-16x16.png"
             />
-            <link rel="manifest" href="/manifest.json" />
             <meta name="msapplication-TileColor" content="#000000" />
             <meta
               name="msapplication-TileImage"

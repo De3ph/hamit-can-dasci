@@ -3,13 +3,20 @@ import { urlFor } from "@lib/sanity/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import glassStlye from "@styles/Glass.module.css";
 
 const BlogCard = ({ post }) => {
   return (
     <>
       <Link href={"/blog/post/" + post.slug}>
         <a>
-          <Box key={post.title} bgColor="black">
+          <Box
+            className={glassStlye.glass}
+            key={post.title}
+            _hover={{
+              bgGradient: "linear(to-r, blackAlpha.300, blackAlpha.900)",
+            }}
+          >
             <VStack>
               <Box display="flex" justifyContent="center" w="100%" p={4}>
                 <Image

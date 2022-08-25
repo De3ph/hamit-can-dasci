@@ -75,9 +75,10 @@ const Hero = ({ title, desc, highlightWords }) => {
             <MotionBox
               initial={{ y: 0 }}
               animate={{
-                y: 4,
+                y: 3,
+                rotate: 0.1,
                 transition: {
-                  duration: 2.5,
+                  duration: 2,
                   repeat: Infinity,
                   repeatType: "reverse",
                 },
