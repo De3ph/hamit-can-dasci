@@ -1,7 +1,6 @@
 import Hero from "@components/Hero/Hero";
 import { Box } from "@chakra-ui/react";
-import style from "@styles/Glass.module.css";
-import { store } from "redux/post/postStore";
+import style from "@styles/Glass.module.css"
 
 const title = "Hi! I'm Hamit";
 const heroDesc = `Hamit is a Jr Web Developer who is improve his skills day
