@@ -32,3 +32,6 @@ yarn-error.log*
 
 # Sanity Studio
 /studio/node_modules
+
+# TODO file
+TODO-FIXME.md
