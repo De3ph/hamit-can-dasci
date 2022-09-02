@@ -23,7 +23,7 @@ const Hero = ({ title, desc, highlightWords }) => {
             w="100%"
             columns={{
               sm: 1,
-              lg: 2,
+              lg: 2
             }}
           >
             <Flex direction="column" className="infos">
@@ -31,7 +31,7 @@ const Hero = ({ title, desc, highlightWords }) => {
                 gap={{
                   base: "2rem",
                   md: "3rem",
-                  lg: "4rem",
+                  lg: "4rem"
                 }}
               >
                 <Box>
@@ -53,16 +53,15 @@ const Hero = ({ title, desc, highlightWords }) => {
 
                 <Box>
                   <Text
-                    as="div"
                     fontSize={{
                       base: "2xl",
-                      lg: "3xl",
+                      lg: "3xl"
                     }}
                   >
                     <Highlight
                       query={highlightWords}
                       styles={{
-                        color: "orange",
+                        color: "orange"
                       }}
                     >
                       {desc}
@@ -80,8 +79,8 @@ const Hero = ({ title, desc, highlightWords }) => {
                 transition: {
                   duration: 2,
                   repeat: Infinity,
-                  repeatType: "reverse",
-                },
+                  repeatType: "reverse"
+                }
               }}
               justify="center"
               align="center"
@@ -93,12 +92,12 @@ const Hero = ({ title, desc, highlightWords }) => {
           <Box
             mt={{
               lg: "4",
-              xl: "auto",
+              xl: "auto"
             }}
             width="fit-content"
             mx={{
               base: "auto",
-              lg: "unset",
+              lg: "unset"
             }}
           >
             <Button
@@ -108,11 +107,11 @@ const Hero = ({ title, desc, highlightWords }) => {
               size={{
                 base: "sm",
                 sm: "md",
-                md: "lg",
+                md: "lg"
               }}
               _hover={{
                 opacity: "0.7",
-                color: colours.github_button_link_hover_text,
+                color: colours.github_button_link_hover_text
               }}
             >
               <a href="https://github.com/De3ph">Let's preview my GitHub</a>
@@ -121,7 +120,7 @@ const Hero = ({ title, desc, highlightWords }) => {
         </Box>
       </Box>
     </>
-  );
+  )
 };
 
 export default Hero;

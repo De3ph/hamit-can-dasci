@@ -37,7 +37,6 @@
     "eslint-config-next": "12.2.2",
     "global-jsdom": "^8.5.0",
     "jsdom": "^20.0.0",
-    "next-redux-wrapper": "^7.0.5",
     "vitest": "^0.19.1"
   }
 }

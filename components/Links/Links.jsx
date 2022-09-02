@@ -1,7 +1,7 @@
-import { Box, Stack, StackDivider } from "@chakra-ui/react";
-import React from "react";
-import { socialLinks } from "@exports/SocialLinks";
-import SocialLink from "./SocialLink";
+import { Box, Stack, StackDivider } from "@chakra-ui/react"
+import React from "react"
+import { socialLinks } from "@exports/SocialLinks"
+import SocialLink from "./SocialLink"
 
 const Links = () => {
   return (
@@ -11,24 +11,25 @@ const Links = () => {
           divider={<StackDivider />}
           direction={{
             base: "column",
-            lg: "row",
+            lg: "row"
           }}
           gap="2"
         >
           {socialLinks.map((item, key) => {
             return (
-              <SocialLink
-                platform={item.platform}
-                href={item.href}
-                icon={item.icon}
-                key={key}
-              />
-            );
+              <Box key={key}>
+                <SocialLink
+                  platform={item.platform}
+                  href={item.href}
+                  icon={item.icon}
+                />
+              </Box>
+            )
           })}
         </Stack>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Links;
+export default Links
