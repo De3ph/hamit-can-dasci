@@ -6,7 +6,6 @@ import Image from "next/image"
 import { urlFor } from "@lib/sanity/sanity"
 
 const Post = ({ post }) => {
-  console.log(post)
   return (
     <>
       <Box minH="50vh" px="32">
@@ -67,7 +66,6 @@ export const getStaticPaths = async ({ preview = false }) => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  console.log(params.slug)
   const post = await getClient(false).fetch(getPostBySlug, {
     slug: "first-post"
   })
