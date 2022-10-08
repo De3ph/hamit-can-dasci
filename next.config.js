@@ -9,6 +9,6 @@ const STUDIO_REWRITE = {
 module.exports = {
   rewrites: () => [STUDIO_REWRITE],
   images: {
-    domains: ["cdn.sanity.io"],
-  },
-};
+    domains: ["cdn.sanity.io", "pbs.twimg.com"]
+  }
+}
