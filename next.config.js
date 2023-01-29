@@ -9,6 +9,8 @@ const STUDIO_REWRITE = {
 module.exports = {
   rewrites: () => [STUDIO_REWRITE],
   images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     domains: ["cdn.sanity.io", "pbs.twimg.com"]
   }
 }
