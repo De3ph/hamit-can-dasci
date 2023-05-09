@@ -14,9 +14,7 @@ import {MotionBox} from "@components/FramerMotion";
 import {Github} from "@emotion-icons/evaicons-solid";
 import {colours} from "@exports/Colours";
 import coder from "public/svg/coder.svg";
-import dynamic from "next/dynamic";
-import {Suspense} from "react";
-import Loading from "@components/Helpers/Loading";
+import dynamic from "next/dynamic"
 
 const Coder = dynamic(
     () => import("public/svg/coder.svg"),

@@ -10,6 +10,9 @@ export default function Layout({ children }) {
       pb="2"
       color="white"
       className={style.layout}
+      bgImage="url(/svg/background.svg)"
+      bgRepeat="no-repeat"
+      bgSize="cover"
       justify="space-between"
       align="center"
       minH="100vh"
