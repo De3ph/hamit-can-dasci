@@ -6,11 +6,15 @@ const STUDIO_REWRITE = {
       : "/studio/index.html",
 };
 
-module.exports = {
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true"
+})
+
+module.exports = withBundleAnalyzer({
   rewrites: () => [STUDIO_REWRITE],
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     domains: ["cdn.sanity.io", "pbs.twimg.com"]
   }
-}
+})
