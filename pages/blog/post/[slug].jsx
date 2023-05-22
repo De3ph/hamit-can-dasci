@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, Heading } from "@chakra-ui/react"
 import { getClient } from "@lib/sanity/sanity"
-import { getAllPostQuery, getPostBySlug } from "querys"
+import { getAllPostQuery, getPostBySlug } from "queries"
 import Image from "next/image"
 import { urlFor } from "@lib/sanity/sanity"
 

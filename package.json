@@ -20,6 +20,7 @@
     "@emotion/styled": "^11",
     "@sanity/cli": "^2.30.2",
     "framer-motion": "^6",
+    "lottie-react": "^2.4.0",
     "next": "^12.1.5",
     "next-sanity": "^0.6.0",
     "nth-check": "^2.0.1",
