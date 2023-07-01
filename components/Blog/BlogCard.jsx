@@ -2,7 +2,6 @@ import {
   Avatar,
   Box,
   Heading,
-  HStack,
   LinkBox,
   LinkOverlay,
   Text,
@@ -15,10 +14,13 @@ import React from "react"
 import glassStlye from "@styles/Glass.module.css"
 
 const BlogCard = ({ post }) => {
+  const postUrl = "/blog/post/" + post.slug
+  const postImageUrl = urlFor(post.mainImage).url()
+  const postAuthorImageUrl = urlFor(post.author.image).url()
   return (
     <>
       <LinkBox as="div">
-        <Link href={"/blog/post/" + post.slug} passHref>
+        <Link href={postUrl} passHref>
           <LinkOverlay>
             <Box
               className={glassStlye.glass}
@@ -32,7 +34,7 @@ const BlogCard = ({ post }) => {
                   <Image
                     width="200"
                     height="200"
-                    src={urlFor(post.mainImage).url()}
+                    src={postImageUrl}
                     alt="img"
                   />
                 </Box>
@@ -49,7 +51,7 @@ const BlogCard = ({ post }) => {
                           <Avatar
                             size="xl"
                             name={post.author.name}
-                            src={urlFor(post.author.image).url()}
+                            src={postAuthorImageUrl}
                           />
                         </Box>
                         <Box>
